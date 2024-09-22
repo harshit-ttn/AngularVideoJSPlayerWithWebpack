@@ -5,7 +5,7 @@ import videojs from 'video.js';
   selector: 'app-video-player',
   templateUrl: './video-player.component.html',
   styleUrls: ['./video-player.component.scss'],
-  standalone: true, // Ensure it's standalone
+  standalone: true,
 })
 export class VideoPlayerComponent implements OnInit {
   @ViewChild('videoPlayer', { static: true }) videoPlayer!: ElementRef;

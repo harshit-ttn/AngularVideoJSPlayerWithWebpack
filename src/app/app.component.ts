@@ -9,5 +9,5 @@ import { RouterModule } from '@angular/router';
   imports: [RouterModule], // Import RouterModule to handle routing in the template
 })
 export class AppComponent {
-  title = 'angular-videoplayer-webpack';
+  title = 'AngularJS VideoPlayer';
 }
