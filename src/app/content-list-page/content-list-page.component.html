@@ -1,8 +1,9 @@
-<div class="content-list">
-  <h2>{{ contentType | uppercase }} Contents</h2>
-  <ul>
-    <li *ngFor="let content of contentList" (click)="playContent(content)">
-      {{ content }}
-    </li>
-  </ul>
+<div>
+  <h1>{{ contentType | uppercase }} Content</h1>
+  <div *ngFor="let content of contentList">
+    <app-widget-block
+      [content]="content"
+      (play)="playContent($event)"
+    ></app-widget-block>
+  </div>
 </div>

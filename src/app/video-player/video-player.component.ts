@@ -1,20 +1,22 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, Input } from '@angular/core';
 import videojs from 'video.js';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-video-player',
   templateUrl: './video-player.component.html',
   styleUrls: ['./video-player.component.scss'],
   standalone: true,
+  imports: [CommonModule],
 })
 export class VideoPlayerComponent implements OnInit {
   @ViewChild('videoPlayer', { static: true }) videoPlayer!: ElementRef;
   player: any;
+  @Input() index: any;
 
   ngOnInit(): void {
     this.player = videojs(this.videoPlayer.nativeElement, {
-      controls: true,
-      autoplay: false,
+      controls: false,
+      autoplay: true,
       preload: 'auto',
       sources: [
         {
