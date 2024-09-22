@@ -1,0 +1,8 @@
+<div class="content-list">
+  <h2>{{ contentType | uppercase }} Contents</h2>
+  <ul>
+    <li *ngFor="let content of contentList" (click)="playContent(content)">
+      {{ content }}
+    </li>
+  </ul>
+</div>
