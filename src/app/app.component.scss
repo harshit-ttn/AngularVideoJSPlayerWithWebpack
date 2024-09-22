@@ -3,24 +3,27 @@
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
-}
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
 
-header {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-}
+  header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
-main {
-  flex-grow: 1;
-  padding: 20px;
-}
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+  }
 }

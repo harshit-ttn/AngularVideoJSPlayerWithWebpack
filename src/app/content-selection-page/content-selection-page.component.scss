@@ -1,16 +1,18 @@
 .content-selection {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-top: 50px;
 
   .block {
-    padding: 40px;
+    padding: 50px;
     width: 200px;
     text-align: center;
-    cursor: pointer;
-    border: 2px solid #000;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
     &.drm {
       background-color: #2196f3;
@@ -28,7 +30,7 @@
     }
 
     &:hover {
-      opacity: 0.8;
+      transform: scale(1.05);
     }
   }
 }
