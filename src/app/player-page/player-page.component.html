@@ -1,4 +1,7 @@
 <div class="player-page">
   <h2>Now Playing: {{ content }}</h2>
-  <app-video-player [index]="index"></app-video-player>
+  <app-video-player
+    [index]="index"
+    [contentType]="contentType"
+  ></app-video-player>
 </div>

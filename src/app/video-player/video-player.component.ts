@@ -12,6 +12,7 @@ export class VideoPlayerComponent implements OnInit {
   @ViewChild('videoPlayer', { static: true }) videoPlayer!: ElementRef;
   player: any;
   @Input() index: any;
+  @Input() contentType: any;
 
   ngOnInit(): void {
     this.player = videojs(this.videoPlayer.nativeElement, {

@@ -30,6 +30,11 @@ export class ContentListPageComponent {
   }
 
   playContent(content: any) {
-    this.router.navigate(['/player', content.content_name, content.index]);
+    this.router.navigate([
+      '/player',
+      content.content_name,
+      content.index,
+      this.contentType,
+    ]);
   }
 }

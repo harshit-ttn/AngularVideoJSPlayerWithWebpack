@@ -13,10 +13,13 @@ import { CommonModule } from '@angular/common';
 export class PlayerPageComponent {
   content: string;
   index: any;
+  contentType: string;
 
   constructor(private route: ActivatedRoute) {
     this.content =
       this.route.snapshot.paramMap.get('content') || 'Unknown Content';
     this.index = this.route.snapshot.paramMap.get('index') || 0;
+    this.contentType =
+      this.route.snapshot.paramMap.get('contentType') || 'Unknown Content Type';
   }
 }

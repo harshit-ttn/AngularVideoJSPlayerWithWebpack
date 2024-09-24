@@ -8,5 +8,8 @@ export const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'content-selection', component: ContentSelectionPageComponent },
   { path: 'content-list/:type', component: ContentListPageComponent },
-  { path: 'player/:content/:index', component: PlayerPageComponent },
+  {
+    path: 'player/:content/:index/:contentType',
+    component: PlayerPageComponent,
+  },
 ];
