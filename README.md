@@ -19,4 +19,4 @@ ng serve --open
 
 # Blog Link
 
-[Blog on AngularJS](https://medium.com/@harshitsinghal641/implementing-video-js-in-angularjs-for-drm-non-drm-and-live-contents-68a47475111a)
+[Implementing Video.js in AngularJS for DRM, Non-DRM, and Live Contents](https://medium.com/@harshitsinghal641/implementing-video-js-in-angularjs-for-drm-non-drm-and-live-contents-68a47475111a)
