@@ -1,19 +1,64 @@
-#videoPlayer {
-  .vjs-default-skin {
-    background-color: #000;
+.video-player-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  .vjs-control-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .vjs-play-control {
     color: #fff;
-    border-radius: 5px;
+    &:hover {
+      color: #00bcd4;
+    }
+  }
 
-    .vjs-control-bar {
-      background-color: rgba(0, 0, 0, 0.5);
+  .vjs-volume-control {
+    color: #fff;
+    &:hover {
+      color: #00bcd4;
+    }
+  }
+
+  .vjs-fullscreen-control {
+    color: #fff;
+    &:hover {
+      color: #00bcd4;
+    }
+  }
+
+  .vjs-big-play-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    &:hover {
+      background-color: rgba(0, 188, 212, 0.7);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .video-player-container {
+    padding: 5px;
+
+    video {
+      border-radius: 4px;
     }
 
-    .vjs-play-control {
-      color: #fff;
-    }
-
-    .vjs-volume-control {
-      color: #fff;
+    .vjs-big-play-button {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
     }
   }
 }
